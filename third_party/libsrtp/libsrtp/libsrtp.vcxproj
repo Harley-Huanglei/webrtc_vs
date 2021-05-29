@@ -126,7 +126,7 @@
       <SubSystem>Windows</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y $(targetpath) ..\x86-windows-cl14\lib\libsrtp-g.lib</Command>
+      <Command>copy /Y $(targetpath) ..\..\opus\x86-windows-cl14\lib\libsrtp-g.lib</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -159,7 +159,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>copy /Y $(targetpath) ..\x86-windows-cl14\lib\libsrtp-O.lib</Command>
+      <Command>copy /Y $(targetpath) ..\..\opus\x86-windows-cl14\lib\libsrtp-O.lib</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
